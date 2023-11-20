@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Public Sans', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 2%;
+}
+
+    header {
+        width: 100%;
+        height: 25%;
+        background-color: #ead4f7;
+        border-bottom-right-radius: 18%;
+        
+    }
+
+        .content-header {
+            width: 100%;
+            height:100%;
+            background-color: #4FA271;
+            border-bottom-right-radius: 30%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+        }
+
+            .content-header h1 {
+                color: rgb(119, 230, 255);
+                font-size:larger;      
+                margin: 10px;
+                text-align: center;
+            }
+            
+            .content-header h2 {
+                color: rgb(233, 220, 44);
+                font-size: smaller;        
+                margin: 10px;
+                text-align: center;
+            }
+
+           .content-header img {
+                width: 100px;
+                height: 100px;
+                margin: auto;
+                border-radius: 30%;
+                transition-duration: 1000ms;
+                padding: 10px;
+                padding-top: 10px;
+            }
+            
+            .content-header hover {
+                width: 150px;
+            }
+
+    main {
+        background-color: white;
+        /*background-color: #ead4f7;*/
+        width: 100%;
+        height: 75%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+
+    }
+
+        aside {
+            width: 20%;
+            height: 100%;
+        }
+
+        section {
+            background-color: rgb(255, 255, 255);
+            border-bottom-right-radius: 50%;
+            width: 80%;
+            height: 100%;
+        }
+        
+    main h3 {
+        color: darkslateblue;
+        font-size:large;
+        border-style: none;
+        padding: 10px 10px;
+
+    }
+
+    main ul {
+        list-style: none;
+        margin-left: 10px;
+    }
+
+    main li {
+        padding: 15px;
+    }
+
+    main a {
+        color: blueviolet;
+        text-decoration: none;
+    }
+
+    main p {
+        padding: 10px 10px
+    }
+
+    #objetivo {
+        padding: 10px 10px;
+        font-style: normal;
+    }
+
+section p {
+    font-style: italic;
+
+}

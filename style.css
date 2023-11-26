@@ -1,120 +1,204 @@
+/*FUENTES
+font-family: 'Montserrat', sans-serif;
+font-family: 'Cinzel Decorative', serif;*/
+
+/*.......ESTRUCTURA CAJAS............*/
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Public Sans', sans-serif;
+    border-width: 0;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body {
-    width: 100vw;
-    height: 100vh;
-    margin: 2%;
+    width: 100%;
+    height: auto;
+    margin: 20px;  
 }
 
-    header {
-        width: 100%;
-        height: 25%;
-        background-color: #ead4f7;
-        border-bottom-right-radius: 18%;
-        
+header {
+    background-color: #75bc92;
+    border-bottom-right-radius: 35%;
+    width: 100%;
+        min-width: 300px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+    .photo-header {
+        background-color: #602c7e;
+        width: 33.33%;
+            min-width: 300px;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-
-        .content-header {
-            width: 100%;
-            height:100%;
-            background-color: #4FA271;
-            border-bottom-right-radius: 30%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-
-        }
-
-            .content-header h1 {
-                color: rgb(119, 230, 255);
-                font-size:larger;      
-                margin: 10px;
-                text-align: center;
-            }
-            
-            .content-header h2 {
-                color: rgb(233, 220, 44);
-                font-size: smaller;        
-                margin: 10px;
-                text-align: center;
-            }
-
-           .content-header img {
-                width: 100px;
-                height: 100px;
-                margin: auto;
-                border-radius: 30%;
-                transition-duration: 1000ms;
-                padding: 10px;
-                padding-top: 10px;
-            }
-            
-            .content-header hover {
-                width: 150px;
-            }
-
-    main {
-        background-color: white;
-        /*background-color: #ead4f7;*/
-        width: 100%;
-        height: 75%;
+    .content-header {
+        background-color: #602c7e;
+        width: 33.33%;
+            min-width: 300px;
         display: flex;
         flex-direction: column;
-        align-items: start;
-
+        justify-content: center;
+        align-items: center;
+    }
+    .space-header {
+        background-color: #602c7e;
+        border-bottom-right-radius: 120%;
+        width: 33.33%;
+            min-width: 300px;
+        height: auto;
+        display: flex;
+    }
+    img {
+        width: 300px;
+        border-radius: 10%;
+        transition-duration: 1000ms;
+    }
+    
+    img:hover {
+        width: 400px;
     }
 
-        aside {
-            width: 20%;
-            height: 100%;
-        }
+main {
+    background-color: #ead4f7;
+    width: 100%;
+        min-width: 300px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+}
 
-        section {
-            background-color: rgb(255, 255, 255);
-            border-bottom-right-radius: 50%;
-            width: 80%;
-            height: 100%;
-        }
-        
-    main h3 {
-        color: darkslateblue;
-        font-size:large;
-        border-style: none;
-        padding: 10px 10px;
-
+    aside {
+        background-color: #ead4f7;
+        width: 20%;
+            min-width: 300px;
+    }
+    section {
+        background-color: rgb(255, 255, 255);
+        border-bottom-right-radius: 60%;   
+        width: 80%;
+            min-width: 300px;
     }
 
-    main ul {
-        list-style: none;
-        margin-left: 10px;
+/*.......TIPOGRAFÍA............*/
+
+.content-header h1 {
+    font-family: 'Cinzel Decorative', serif;
+    color: rgb(119, 230, 255);
+    font-size:60px;      
+    margin: 30px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.content-header h2 {
+    color: rgb(246, 233, 59);
+    font-size: 55px;        
+    margin: 30px;
+    margin-top: 0px;
+    text-align: center;
+}
+
+main h3{
+    color: #602c7e;
+    font-size:50px;
+    margin: 30px;
+}
+
+main li {
+    list-style: none;
+    font-size: 40px;
+    margin: 50px;
+}
+
+main a {
+    color: blueviolet;
+    text-decoration: none;
+    
+}
+
+main p {
+    font-size: 40px;
+    margin: 50px 60px;
+}
+#correo {
+    font-size: 40px;
+}
+#objetivo{
+    font-weight: 700;
+    font-size:40px;
+    margin-left: 50px;
+}
+aside h3{
+    text-align: center;
+}
+
+section h3{
+    text-align: left;
+    padding-left: 55px;
+}
+
+section li{
+    font-weight: 700;
+    color: rgb(84, 141, 84);
+}
+
+section li p{
+    font-weight: 100;
+    color: black;
+}
+
+/*.......MEDIA QUERIES............*/
+
+@media(max-width:1540px){  
+    aside, section {
+        width: 50%;
     }
+    section h3{
+        text-align: center;
+    } 
 
-    main li {
-        padding: 15px;
+    .content-header h1{
+        font-size: 40px;
     }
-
-    main a {
-        color: blueviolet;
-        text-decoration: none;
+    .content-header h2{
+        font-size: 35px;
     }
-
-    main p {
-        padding: 10px 10px
+    .content-header h3{
+        font-size: 30px;
     }
-
-    #objetivo {
-        padding: 10px 10px;
-        font-style: normal;
+}
+@media(max-width:1040px){
+    #correo{
+        font-size: 20px;
     }
+}
 
-section p {
-    font-style: italic;
+@media(max-width:940px){
+    header, section {
+        border-bottom-right-radius: 0%;
+    }   
+    .photo-header, .content-header{
+        width: 45%;
+    }
+    img{
+        width: 200px;
+        height: 200px;
+    }
+}
 
+@media(max-width:640px){
+    header {
+        background-color: #602c7e;
+    }
+    aside, section{
+        width: 100%;
+    }
 }
